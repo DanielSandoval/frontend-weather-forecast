@@ -15,7 +15,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
     <title>Cognits Blog</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/ibs/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/styles.css" rel="stylesheet">
@@ -29,15 +29,129 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
 </head>
 
-  <body>
+  <body background="http://thumbs.dreamstime.com/z/nubes-azules-incons%C3%BAtiles-6038196.jpg">
 
+    <!--This part is a title that will always be-->
+    <div class="container">
+    	<div class="row">
+  			<h1 class="title">Weather Forecast</h1>
+    	</div>
+    </div>
 
+    <!--This is the first part that allows type a location-->
+    <div class="container partHideOne">
+      <div class="row">
+        <input class="country" type="text">
+      </div>
+      <div class="row">
+        <input class="state" type="text">
+      </div>
+      <div class="row">
+        <!--This are radio buttons (options)-->
+        <p class="textTypeWeather">°F</p><input id="radioB1" type="radio" name="typeWeather" value="fahrenheit" checked/>
+        <p class="textTypeWeather">°C</p><input id="radioB2" type="radio" name="typeWeather" value="celsius"/>
+      </div>
+      <div class="row">
+        <div class="search_city">
+          <button class="search_weather" id="search_weather">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!--This is where it will show the results of the city's weather forecast-->
+    <div class="container partHideTwo">
+
+      <div class="container">
+        <div class="row">
+          <h2 id="city"></h2>
+        </div>
+      </div>
+
+      <div class="container generalData">
+        <div class="row">
+          <p class="secondGeneralData" id="weather"></p>
+          <p class="secondGeneralData" id="temp"></p>
+        </div>
+      </div>
+
+      <!--This contains the information-->
+      <div class="container information">
+
+        <!--This is the first row of information-->
+        <div class="row firstRow">
+
+          <div class="container col-md-3">
+            <div class="row">
+              <h1>Humidity</h1>
+            </div>
+            <div class="row">
+              <p id="humidity"></p>
+            </div>
+          </div>
+
+          <div class="container col-md-3">
+            <div class="row">
+              <h1>Wind</h1>
+            </div>
+            <div class="row">
+              <p id="wind"></p>
+            </div>
+          </div>
+
+          <div class="container col-md-3">
+            <div class="row">
+              <h1>Visibility</h1>
+            </div>
+            <div class="row">
+              <p id="visibility"></p>
+            </div>
+          </div>
+
+          <div class="container col-md-3">
+            <div class="row">
+              <h1>Elevation</h1>
+            </div>
+            <div class="row">
+              <p id="elevation"></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!--This is the second row-->
+        <div class="row secondRow">
+
+          <div class="container col-md-3 withMark">
+            <div class="row">
+              <h1>Latitude</h1>
+            </div>
+            <div class="row">
+              <p id="latitude"></p>
+            </div>
+          </div>
+
+          <div class="container col-md-3 withMark">
+            <div class="row">
+              <h1>Longitude</h1>
+            </div>
+            <div class="row">
+              <p id="longitude"></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="btnNewSearch">New search</button>
+
+    </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/libs/jquery-2.1.1.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="js/libs/bootstrap.js"></script>
 
   </body>
 </html>
