@@ -23,4 +23,4 @@ The user should be able to change of city and to define if he wants to see the d
 
 You are free to add as much features as you want to this SPA, and the best application will win a special award.
 
-http://danielsandoval.github.io/frontend-weather-forecast.
+## http://danielsandoval.github.io/frontend-weather-forecast.
