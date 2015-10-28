@@ -40,17 +40,21 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
     <!--This is the first part that allows type a location-->
     <div class="container partHideOne">
+      <form id="countryAndState">
+        <div class="row">
+          <input class="country" type="text" placeholder="Country">
+        </div>
+        <div class="row">
+          <input class="state" type="text" placeholder="State">
+        </div>
+      </form>
+
       <div class="row">
-        <input class="country" type="text">
-      </div>
-      <div class="row">
-        <input class="state" type="text">
-      </div>
-      <div class="row">
-        <!--This are radio buttons (options)-->
+        <!--This are radio buttons (options) for fahrenheit or celsius option-->
         <p class="textTypeWeather">°F</p><input id="radioB1" type="radio" name="typeWeather" value="fahrenheit" checked/>
         <p class="textTypeWeather">°C</p><input id="radioB2" type="radio" name="typeWeather" value="celsius"/>
       </div>
+      <!--This is the button search weather-->
       <div class="row">
         <div class="search_city">
           <button class="search_weather" id="search_weather">Search</button>
@@ -67,9 +71,11 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         </div>
       </div>
 
+      <!--Here show the weather, icon and temperature-->
       <div class="container generalData">
         <div class="row">
           <p class="secondGeneralData" id="weather"></p>
+          <div id="icon"></div>
           <p class="secondGeneralData" id="temp"></p>
         </div>
       </div>
@@ -80,6 +86,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         <!--This is the first row of information-->
         <div class="row firstRow">
 
+          <!--Here will show the Humidity-->
           <div class="container col-md-3">
             <div class="row">
               <h1>Humidity</h1>
@@ -89,6 +96,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             </div>
           </div>
 
+          <!--Here will show the Wind-->
           <div class="container col-md-3">
             <div class="row">
               <h1>Wind</h1>
@@ -98,6 +106,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             </div>
           </div>
 
+          <!--Here will show the Visibility-->
           <div class="container col-md-3">
             <div class="row">
               <h1>Visibility</h1>
@@ -107,6 +116,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             </div>
           </div>
 
+          <!--Here will show the Elevation-->
           <div class="container col-md-3">
             <div class="row">
               <h1>Elevation</h1>
@@ -121,6 +131,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
         <!--This is the second row-->
         <div class="row secondRow">
 
+          <!--Here will show the Latitude-->
           <div class="container col-md-3 withMark">
             <div class="row">
               <h1>Latitude</h1>
@@ -130,6 +141,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
             </div>
           </div>
 
+          <!--Here will show the Longitude-->
           <div class="container col-md-3 withMark">
             <div class="row">
               <h1>Longitude</h1>
@@ -142,6 +154,7 @@ la estructura correta y guardar TODO tu CSS en el archivo styles.css
 
       </div>
 
+      <!--This is a button for a new search-->
       <button class="btnNewSearch">New search</button>
 
     </div>
